@@ -12,6 +12,9 @@ finish-args:
 - --device=dri
 - --share=ipc
 - --share=network
+- --filesystem=home
+- --filesystem=xdg-run/gvfs # GVfs
+- --filesystem=/media # automount via udisks
 
 modules:
   - name: QGroundControl
