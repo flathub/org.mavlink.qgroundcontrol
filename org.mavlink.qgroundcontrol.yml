@@ -27,6 +27,7 @@ modules:
     config-opts:
     - -D BUILD_SHARED_LIBS=OFF
     - -D OpenGL_GL_PREFERENCE=GLVND
+    - -D BUILD_TESTING=OFF
     cleanup:
     - /include
     - /bin/dbf*
