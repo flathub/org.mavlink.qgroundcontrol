@@ -21,12 +21,13 @@ modules:
     sources:
     - type: git
       url: https://github.com/mavlink/qgroundcontrol.git
-      commit: 245f9f1f9c475a24b02271e0b1a7a150f601f80d
+      commit: ffda931df5a93132d51aae9ca0bd7200f0f6ca2f # Thu Sep 7 19:04:57 2023 +0000
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
     - -D BUILD_SHARED_LIBS=OFF
     - -D OpenGL_GL_PREFERENCE=GLVND
+    - -D BUILD_TESTING=OFF
     cleanup:
     - /include
     - /bin/dbf*
