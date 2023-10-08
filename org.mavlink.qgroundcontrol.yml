@@ -10,11 +10,13 @@ finish-args:
 - --socket=fallback-x11
 - --socket=pulseaudio
 - --device=dri
+- --device=all  # allow access USB Serial
 - --share=ipc
 - --share=network
 - --filesystem=home
 - --filesystem=xdg-run/gvfs # GVfs
 - --filesystem=/media # automount via udisks
+- --filesystem=/run/udev:ro # enables firmware upload & auto connecting
 
 modules:
   - name: QGroundControl
