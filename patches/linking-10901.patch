@@ -1,0 +1,29 @@
+From 0425ba150da7c10146eb66c4bb0f6838895242a4 Mon Sep 17 00:00:00 2001
+From: Christian Rauch <Rauch.Christian@gmx.de>
+Date: Wed, 6 Dec 2023 21:32:52 +0100
+Subject: add VehicleGeneratorFactGroup and VehicleEFIFactGroup to Vehicle
+ library
+
+
+diff --git a/src/Vehicle/CMakeLists.txt b/src/Vehicle/CMakeLists.txt
+index eaabd67ed..1e0d326c2 100644
+--- a/src/Vehicle/CMakeLists.txt
++++ b/src/Vehicle/CMakeLists.txt
+@@ -73,6 +73,8 @@ add_library(Vehicle
+ 	VehicleClockFactGroup.h
+ 	VehicleDistanceSensorFactGroup.cc
+ 	VehicleDistanceSensorFactGroup.h
++	VehicleEFIFactGroup.cc
++	VehicleEFIFactGroup.h
+ 	VehicleEscStatusFactGroup.cc
+ 	VehicleEscStatusFactGroup.h
+ 	VehicleEstimatorStatusFactGroup.cc
+@@ -85,6 +87,8 @@ add_library(Vehicle
+ 	VehicleGPSFactGroup.h
+ 	VehicleGPS2FactGroup.cc
+ 	VehicleGPS2FactGroup.h
++	VehicleGeneratorFactGroup.cc
++	VehicleGeneratorFactGroup.h
+ 	Vehicle.h
+ 	VehicleLinkManager.cc
+ 	VehicleLinkManager.h
