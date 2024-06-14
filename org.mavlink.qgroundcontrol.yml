@@ -27,12 +27,8 @@ modules:
           type: git
           tag-pattern: ^v([\d.]+)$
         commit: 15bdfd5f16562a09ccb1a57808ed0405049645a7
-    buildsystem: cmake-ninja
+    buildsystem: qmake
     builddir: true
-    config-opts:
-      - -D BUILD_SHARED_LIBS=OFF
-      - -D OpenGL_GL_PREFERENCE=GLVND
-      - -D BUILD_TESTING=OFF
     cleanup:
       - /include
       - /bin/dbf*
