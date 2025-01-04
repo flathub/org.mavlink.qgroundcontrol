@@ -17,9 +17,9 @@ finish-args:
   - --filesystem=/media # automount via udisks
   - --filesystem=/run/udev:ro # enables firmware upload & auto connecting
 
-build-options:
-  build-args:
-  - "--share=network"
+# build-options:
+#   build-args:
+#   - "--share=network"
 
 modules:
   - name: QGroundControl
