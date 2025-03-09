@@ -22,14 +22,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/mavlink/qgroundcontrol.git
-        tag: v4.3.0
+        tag: v4.4.3
         # x-checker-data:
         #   type: git
         #   tag-pattern: ^v([\d.]+)$
-        commit: 83d9a3c3e832f939ec39f6e14cb8bac9ccacc3da
-      # https://github.com/mavlink/qgroundcontrol/pull/10901
-      - type: patch
-        path: patches/linking-10901.patch
+        commit: 495a17b4964d3ed90f241388b3a02a35e96c9663
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
