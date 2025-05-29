@@ -22,11 +22,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/mavlink/qgroundcontrol.git
-        tag: v4.4.4
+        tag: v5.0.2
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
-        commit: b809674075f9c12ee4830a5ca824308d249b7ae4
+        commit: 944217028eba75c652c3d60e94e930687646bc22
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
